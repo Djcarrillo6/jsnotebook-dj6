@@ -29,3 +29,8 @@
  
 # Demo ESBuild Plugin - jbook-demo
   **_SEE NOTES w/CODE IN `jbook-demo` APP_**
+
+
+# Caching for Performance
+- To reduce the amount of requests made to `unpkg.com`, a caching layer is implemented.
+- To implement the caching layer, 'localForage' library can offer more storage space than a traditional browsers local storage.

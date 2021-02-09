@@ -34,3 +34,13 @@
 # Caching for Performance
 - To reduce the amount of requests made to `unpkg.com`, a caching layer is implemented.
 - To implement the caching layer, 'localForage' library can offer more storage space than a traditional browsers local storage.
+
+# Executing User Provided Code in the Browser
+- The application will utilize a HTML `iframe` element, to execute the code that was provided by the user to the `iframe`'s parent element.
+- Direct communication between the `iframe` and the parent will be disabled as a security measure.
+- In order to facilitate communication between the parent element and the child element, event listeners placed on both elements. 
+- An event listener placed on the child that can be configured to respond to a specific event emitted from the parent & vice versa.
+- When the user submits code to the parent element, an event will fire off on the child element, which will execute the code providede to it by the parent. 
+
+*Monaco editor will be the open-source browser editor the application provides*
+  - This imported code editor will be wrapped in a React component, and therefore special configuration settings will be made to both the editor and the React component wrapping the editor. 

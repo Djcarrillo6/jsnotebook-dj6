@@ -44,3 +44,9 @@
 
 *Monaco editor will be the open-source browser editor the application provides*
   - This imported code editor will be wrapped in a React component, and therefore special configuration settings will be made to both the editor and the React component wrapping the editor. 
+
+# Errors w/User Provided Code
+- There are 3 main classes of errors that can occur when executing a user's code:
+  1. Bundling/Syntax Error.
+  2. Synchronous Error during execution.
+  3. Asynchronous Error(setTimeout).

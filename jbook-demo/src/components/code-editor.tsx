@@ -29,7 +29,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ onChange, initialValue }) => {
       codeShift,
       monacoEditor
     );
-    // To prevent repititive console.log calls
+    // To prevent repititive console.log calls.xs
     highlighter.highLightOnDidChangeModelContent(
       () => { },
       () => { },

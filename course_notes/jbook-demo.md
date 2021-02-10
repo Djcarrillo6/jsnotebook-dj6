@@ -50,3 +50,4 @@
   1. Bundling/Syntax Error.
   2. Synchronous Error during execution.
   3. Asynchronous Error(setTimeout).
+

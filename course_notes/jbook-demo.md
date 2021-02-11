@@ -51,3 +51,23 @@
   2. Synchronous Error during execution.
   3. Asynchronous Error(setTimeout).
 
+# Data Persistence
+- A user can 'save/load' their notebook code.
+- When a user adds raw code to the "code-cell", I want the data to persist after refresh or exit.
+- All of the user's raw code will be store in a file on the user's hard drive.
+
+***User can save file and the file should be able to work independentlt of the jbook-application***
+  - User can save file
+  - User can submit file to Git
+  - User can open in code editor
+
+# Running jbook on User Machiene
+- User will run a command in their terminal to launch the jbook application.
+- After user runs the terminal command, a CLI program will start to run.
+- The CLI will begin by initiating a local Node.js w/Express server.
+- The `local Node API server` will have 3 different jobs:
+  1. Send user to localhost:4050 & aquire the index.html & index.js files from the buildt React app
+  2. Write any changes a user makes on the React application screen to an external file.
+  3. Load up that file, and provide a listing of all the cells in that jbook notebook-file over to the React application.
+  # User can open file, and see and past changes made to that file, display in the browser.
+ 

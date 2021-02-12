@@ -56,7 +56,7 @@
 - When a user adds raw code to the "code-cell", I want the data to persist after refresh or exit.
 - All of the user's raw code will be store in a file on the user's hard drive.
 
-***User can save file and the file should be able to work independentlt of the jbook-application***
+***User can save file and the file should be able to work independently of the jbook-application***
   - User can save file
   - User can submit file to Git
   - User can open in code editor
@@ -66,8 +66,16 @@
 - After user runs the terminal command, a CLI program will start to run.
 - The CLI will begin by initiating a local Node.js w/Express server.
 - The `local Node API server` will have 3 different jobs:
-  1. Send user to localhost:4050 & aquire the index.html & index.js files from the buildt React app
+  1. Send user to localhost:4050 & aquire the index.html & index.js files from the built React app *create-react-app won't be run client side, just the 2 files will be provided!*
   2. Write any changes a user makes on the React application screen to an external file.
   3. Load up that file, and provide a listing of all the cells in that jbook notebook-file over to the React application.
   # User can open file, and see and past changes made to that file, display in the browser.
  
+**_3 packages will be developed together to form the project_**
+1. CLI
+2. Local Express API
+3. React App(local-client)
+- These modules will be connected through their dependecies.
+
+# Lerna CLI
+- The Lerna CLI is installed locally on my macheine, and used to manage a mutli-package project.
